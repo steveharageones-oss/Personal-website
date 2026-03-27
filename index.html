@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metabolic Library — Independent Health Research Directory</title>
+  <meta name="description" content="A modern editorial-style health research directory covering fat, cholesterol, fasting, Alzheimer's, seed oils, and fructose/uric acid.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Metabolic Library</span>
+        <span class="brand-subtitle">Independent Research Directory</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html" class="is-active" aria-current="page">Home</a>
+        <a href="topics.html">Topics</a>
+        <a href="topic-seed-oils.html">Seed Oils</a>
+        <a href="article-alzheimers.html">Alzheimer’s Research</a>
+        <a href="#methodology">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container hero-layout">
+        <div>
+          <span class="eyebrow">Independent health research directory</span>
+          <h1>Research on metabolism, chronic disease, and the modern food environment.</h1>
+          <p class="lead">A restrained, browsable library for readers who want stronger context around fat, cholesterol, fasting, neurodegeneration, seed oils, and fructose-related metabolic stress. Each topic is organized as a curated dossier rather than a content feed.</p>
+          <div class="hero-actions">
+            <a class="button" href="topics.html">Browse topics</a>
+            <a class="button-secondary" href="article-alzheimers.html">Read featured research page</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <span class="small-label">Current research map</span>
+          <h3>What this MVP already covers</h3>
+          <p>A publication-style front door with clear topic entry points, one sample dossier, and one long-form article template for future expansion.</p>
+          <ul class="panel-list">
+            <li><strong>Dietary fats</strong><span class="subtle">fat, cholesterol, seed oils</span></li>
+            <li><strong>Metabolic regulation</strong><span class="subtle">fasting, fructose, uric acid</span></li>
+            <li><strong>Brain energy</strong><span class="subtle">Alzheimer’s and glucose metabolism</span></li>
+          </ul>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>6</strong>
+              <span>core topics introduced</span>
+            </div>
+            <div class="stat">
+              <strong>3</strong>
+              <span>page types designed</span>
+            </div>
+            <div class="stat">
+              <strong>1</strong>
+              <span>shared editorial system</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="featured-topics">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="label">Featured topics</span>
+            <h2>Start with the core questions.</h2>
+          </div>
+          <p>Each topic summary is structured around claims, mechanisms, historical context, and the quality of the underlying evidence.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="card" href="topics.html#fat">
+            <span class="evidence-badge warm">Foundational</span>
+            <h3>Fat</h3>
+            <p>Revisiting how dietary fat became a policy flashpoint, and why substitution effects matter more than broad pro-fat or anti-fat slogans.</p>
+            <div class="meta">
+              <span>Policy history</span>
+              <span>Mechanisms</span>
+              <span>Directory brief</span>
+            </div>
+          </a>
+          <a class="card" href="topics.html#cholesterol">
+            <span class="evidence-badge note">Clinical</span>
+            <h3>Cholesterol</h3>
+            <p>A topic shaped by lipoprotein biology, risk prediction, dietary context, and the difference between biomarkers and whole-diet outcomes.</p>
+            <div class="meta">
+              <span>Lipoproteins</span>
+              <span>Risk models</span>
+              <span>Directory brief</span>
+            </div>
+          </a>
+          <a class="card" href="topics.html#fasting">
+            <span class="evidence-badge">Mechanistic</span>
+            <h3>Fasting</h3>
+            <p>Time restriction, insulin dynamics, appetite regulation, and the practical question of which fasting strategies actually scale in everyday life.</p>
+            <div class="meta">
+              <span>Meal timing</span>
+              <span>Compliance</span>
+              <span>Directory brief</span>
+            </div>
+          </a>
+          <a class="card" href="topics.html#alzheimers">
+            <span class="evidence-badge warning">Debate</span>
+            <h3>Alzheimer’s</h3>
+            <p>Energy metabolism, insulin signaling, mitochondrial stress, and what the “type 3 diabetes” framing clarifies — and what it can overstate.</p>
+            <div class="meta">
+              <span>Brain glucose use</span>
+              <span>Neurodegeneration</span>
+              <span>Featured article</span>
+            </div>
+          </a>
+          <a class="card" href="topic-seed-oils.html">
+            <span class="evidence-badge warm">Dossier</span>
+            <h3>Seed oils</h3>
+            <p>Industrial processing, oxidation, dose, and the recurring debate over linoleic acid, OXLAMs, and replacement-trial interpretation.</p>
+            <div class="meta">
+              <span>Historical context</span>
+              <span>Mechanisms</span>
+              <span>Open dossier</span>
+            </div>
+          </a>
+          <a class="card" href="topics.html#fructose">
+            <span class="evidence-badge">Metabolic</span>
+            <h3>Fructose / uric acid</h3>
+            <p>Liver ATP depletion, uric acid signaling, fatty liver, blood pressure, and the broader metabolic cascade tied to excess sugar load.</p>
+            <div class="meta">
+              <span>NAFLD</span>
+              <span>Energy stress</span>
+              <span>Directory brief</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="featured-research">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="label">Featured research</span>
+            <h2>Curated reading, not content churn.</h2>
+          </div>
+          <p>The MVP pairs a browsable index with one topic dossier and one article page, establishing the structure for a larger research archive.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="card" href="article-alzheimers.html">
+            <span class="small-label">Article template</span>
+            <h3>Alzheimer’s, glucose metabolism, and the “type 3 diabetes” hypothesis</h3>
+            <p>An editorial synthesis showing how long-form pieces can combine nuance, evidence labels, and selected citations without losing readability.</p>
+            <div class="meta">
+              <span>12 min read</span>
+              <span>Review / synthesis</span>
+              <span>Open article</span>
+            </div>
+          </a>
+          <a class="card" href="topic-seed-oils.html">
+            <span class="small-label">Topic dossier</span>
+            <h3>Seed oils: overview, tensions, and evidence map</h3>
+            <p>A sample hub page that separates historical context, mechanistic concerns, and practical interpretation for a controversial topic.</p>
+            <div class="meta">
+              <span>Overview page</span>
+              <span>Sidebar notes</span>
+              <span>Open dossier</span>
+            </div>
+          </a>
+          <a class="card" href="topics.html">
+            <span class="small-label">Directory</span>
+            <h3>Topic index spanning cardiometabolic and neurodegenerative themes</h3>
+            <p>Built with lightweight filtering so the static MVP still feels useful as a real knowledge index rather than a landing page mockup.</p>
+            <div class="meta">
+              <span>6 topics</span>
+              <span>Filterable</span>
+              <span>Browse index</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="methodology">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="label">Methodology & trust</span>
+            <h2>Built to feel credible because it is structured like a research library.</h2>
+          </div>
+          <p>Every page foregrounds scope, evidence type, and editorial framing so readers can tell whether they’re looking at mechanism, synthesis, historical reporting, or open debate.</p>
+        </div>
+        <div class="trust-grid grid">
+          <article class="card">
+            <span class="small-label">Evidence labels</span>
+            <h3>Clear taxonomy</h3>
+            <p>Pages separate foundational background, mechanistic argument, clinical relevance, historical context, and disputed interpretation.</p>
+          </article>
+          <article class="card">
+            <span class="small-label">Editorial process</span>
+            <h3>Context before conclusions</h3>
+            <p>Summaries are written to surface where evidence is strongest, where debate remains active, and which claims depend on extrapolation.</p>
+          </article>
+          <article class="card">
+            <span class="small-label">Design principle</span>
+            <h3>Readable density</h3>
+            <p>Typography, whitespace, and subtle cards carry the experience so the site feels premium and serious without resorting to wellness-brand styling.</p>
+          </article>
+        </div>
+        <div class="summary-strip" style="margin-top: 1.25rem;">
+          <span class="small-label">How to use this directory</span>
+          <p>Use the <a class="inline-link" href="topics.html">topics page</a> to orient yourself, open the <a class="inline-link" href="topic-seed-oils.html">seed oils dossier</a> for a curated hub layout, and read the <a class="inline-link" href="article-alzheimers.html">Alzheimer’s article</a> for the long-form template.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="small-label">Metabolic Library</span>
+        <p>A calm, publication-quality research directory for modern questions in nutrition, metabolism, and chronic disease.</p>
+        <p class="subtle">© <span data-year></span> Metabolic Library. Static MVP.</p>
+      </div>
+      <div>
+        <h4>Browse</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="topics.html">Topics directory</a></li>
+          <li><a href="topic-seed-oils.html">Seed oils dossier</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Read</h4>
+        <ul class="footer-links">
+          <li><a href="article-alzheimers.html">Featured Alzheimer’s article</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

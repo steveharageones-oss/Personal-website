@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topics Directory — Metabolic Library</title>
+  <meta name="description" content="Browse topic summaries on fat, cholesterol, fasting, Alzheimer's, seed oils, and fructose/uric acid.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Metabolic Library</span>
+        <span class="brand-subtitle">Independent Research Directory</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="topics.html" class="is-active" aria-current="page">Topics</a>
+        <a href="topic-seed-oils.html">Seed Oils</a>
+        <a href="article-alzheimers.html">Alzheimer’s Research</a>
+        <a href="index.html#methodology">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Topics directory</span>
+        <h1>Six entry points for a metabolic health research library.</h1>
+        <p class="lead">The MVP organizes topics the way a serious archive would: each card points to a recurring research question, the type of evidence that dominates it, and where a fuller dossier or article can begin.</p>
+        <div class="summary-strip" style="margin-top: 1.35rem;">
+          <span class="small-label">Editorial note</span>
+          <p>This first version emphasizes navigation, hierarchy, and trust signals over volume. Only the seed oils topic and a sample Alzheimer’s article are fully expanded pages in this MVP.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="directory-controls">
+          <label class="search-field" aria-label="Search topics">
+            <span class="small-label">Search</span>
+            <input type="search" placeholder="Search topics, mechanisms, or debates" data-topic-search>
+          </label>
+          <div class="directory-meta">
+            <span data-topic-count>6 topics shown</span>
+            <span>Static filtering, no build step required</span>
+          </div>
+        </div>
+
+        <div class="chip-row" aria-label="Topic filters">
+          <button class="chip is-active" type="button" data-filter-chip data-filter="all">All</button>
+          <button class="chip" type="button" data-filter-chip data-filter="dietary-fats">Dietary fats</button>
+          <button class="chip" type="button" data-filter-chip data-filter="cardiometabolic">Cardiometabolic</button>
+          <button class="chip" type="button" data-filter-chip data-filter="neurodegeneration">Neurodegeneration</button>
+          <button class="chip" type="button" data-filter-chip data-filter="history">History</button>
+          <button class="chip" type="button" data-filter-chip data-filter="mechanisms">Mechanisms</button>
+        </div>
+
+        <div class="grid grid-2 directory-grid" style="margin-top: 1.5rem;">
+          <article class="card" id="fat" data-topic-card data-category="dietary-fats history" data-search="fat dietary fat policy history substitution effects public health guidelines">
+            <span class="evidence-badge warm">Foundational</span>
+            <h3>Fat</h3>
+            <p>Dietary fat is less a single question than a bundle of them: food source, replacement nutrient, metabolic context, and the long afterlife of low-fat public messaging.</p>
+            <div class="meta">
+              <span>Dominant lenses: policy + mechanisms</span>
+              <span>Scope: broad topic brief</span>
+            </div>
+          </article>
+
+          <article class="card" id="cholesterol" data-topic-card data-category="cardiometabolic mechanisms" data-search="cholesterol ldl hdl apob risk biomarkers lipoproteins cardiovascular disease">
+            <span class="evidence-badge note">Clinical</span>
+            <h3>Cholesterol</h3>
+            <p>This section frames cholesterol as a conversation about lipoprotein transport, risk markers, dietary response, and how causal claims are translated into practical guidance.</p>
+            <div class="meta">
+              <span>Dominant lenses: biomarkers + outcomes</span>
+              <span>Scope: directory brief</span>
+            </div>
+          </article>
+
+          <article class="card" id="fasting" data-topic-card data-category="cardiometabolic mechanisms" data-search="fasting time restricted eating insulin appetite autophagy compliance metabolic flexibility">
+            <span class="evidence-badge">Mechanistic</span>
+            <h3>Fasting</h3>
+            <p>Fasting research touches insulin dynamics, satiety, circadian timing, adherence, and the persistent tension between short-term biomarker changes and durable lifestyle fit.</p>
+            <div class="meta">
+              <span>Dominant lenses: timing + adherence</span>
+              <span>Scope: directory brief</span>
+            </div>
+          </article>
+
+          <article class="card" id="alzheimers" data-topic-card data-category="neurodegeneration mechanisms" data-search="alzheimers glucose metabolism type 3 diabetes insulin resistance brain energy mitochondria">
+            <span class="evidence-badge warning">Debate</span>
+            <h3>Alzheimer’s</h3>
+            <p>The metabolic framing of Alzheimer’s centers on impaired glucose use, insulin signaling, mitochondrial strain, and the limits of reducing a heterogeneous disease to one label.</p>
+            <div class="meta">
+              <span>Dominant lenses: brain energy + synthesis</span>
+              <span><a class="inline-link" href="article-alzheimers.html">Read featured article →</a></span>
+            </div>
+          </article>
+
+          <article class="card" id="seed-oils" data-topic-card data-category="dietary-fats history mechanisms" data-search="seed oils linoleic acid oxlams oxidation processing replacement trials omega 6">
+            <span class="evidence-badge warm">Dossier live</span>
+            <h3>Seed oils</h3>
+            <p>One of the most polarizing modern nutrition debates. The useful questions concern processing, oxidation, dose, substitution, and what specific trial designs can actually tell us.</p>
+            <div class="meta">
+              <span>Dominant lenses: history + oxidation</span>
+              <span><a class="inline-link" href="topic-seed-oils.html">Open topic dossier →</a></span>
+            </div>
+          </article>
+
+          <article class="card" id="fructose" data-topic-card data-category="cardiometabolic mechanisms" data-search="fructose uric acid fatty liver liver atp depletion blood pressure insulin resistance">
+            <span class="evidence-badge">Metabolic</span>
+            <h3>Fructose / uric acid</h3>
+            <p>Fructose is often explored through hepatic energy depletion, uric acid signaling, fatty liver, blood pressure, and the broader environmental pattern of sugar overexposure.</p>
+            <div class="meta">
+              <span>Dominant lenses: liver metabolism + environment</span>
+              <span>Scope: directory brief</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="small-label">Metabolic Library</span>
+        <p>Editorially structured, static by design, and ready to expand topic by topic.</p>
+        <p class="subtle">© <span data-year></span> Metabolic Library. Static MVP.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="topics.html">Topics directory</a></li>
+          <li><a href="topic-seed-oils.html">Seed oils dossier</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Featured</h4>
+        <ul class="footer-links">
+          <li><a href="article-alzheimers.html">Alzheimer’s article</a></li>
+          <li><a href="index.html#methodology">Methodology</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
