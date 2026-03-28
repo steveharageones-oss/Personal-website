@@ -3,58 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ferroptosis: How Seed Oils Rust the Cell - Research Directory</title>
+  <title>Ferroptosis: How Seed Oils Rust the Cell | Metabolic Library</title>
+  <meta name="description" content="Deep dive on Ferroptosis and how fragile PUFAs cause explosive cell death.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <div class="logo">Research Directory</div>
-      <nav class="nav-links">
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Metabolic Library</span>
+        <span class="brand-subtitle">Independent Research Directory</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="primary-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="topic-war-on-fat.html">War on Fat</a>
         <a href="topic-cholesterol.html">Cholesterol</a>
         <a href="topic-alzheimers.html">Alzheimer's</a>
-        <a href="topic-seed-oils.html" class="active">Seed Oils</a>
+        <a href="topic-seed-oils.html" class="is-active">Seed Oils</a>
       </nav>
     </div>
   </header>
 
-  <main class="article-layout layout-container">
-    <article class="longform-content">
-      <a href="topic-seed-oils.html" class="back-link">← Back to Seed Oils Hub</a>
+  <main>
+    <section class="topic-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="topic-seed-oils.html">Seed Oils</a>
+          <span>/</span>
+          <span>Ferroptosis Deep Dive</span>
+        </div>
+        <span class="eyebrow">Deep Dive Dossier</span>
+        <h1>Ferroptosis: How Seed Oils Rust the Cell</h1>
+        <p class="lead">For decades, scientists have known that seed oils drive "inflammation." The discovery of Ferroptosis finally answers exactly how—and it's more catastrophic than anyone predicted.</p>
+      </div>
+    </section>
 
-      <h1>Ferroptosis: How Seed Oils Rust the Cell</h1>
-      <p class="author-line">Deep Dive Dossier</p>
+    <section class="section" style="padding-top: 1.4rem;">
+      <div class="container topic-layout">
+        <div class="topic-main">
+          <section class="note-box" id="discovery">
+            <span class="small-label">The Breakthrough</span>
+            <h3>The Discovery of Cellular Rust</h3>
+            <p>Until 2012, biologists generally believed cells died in one of two ways: <em>Apoptosis</em> (a quiet, beautifully programmed cellular suicide) or <em>Necrosis</em> (messy death by traumatic injury).</p>
+            <p>That changed when Dr. Brent R. Stockwell and Dr. Scott Dixon at Columbia University discovered an entirely new, third pathway of cell death. They called it <strong>Ferroptosis</strong>. The name comes from "ferro" (iron) and "ptosis" (falling or dying). Ferroptosis is an explosive, iron-dependent cellular death driven entirely by rampant <em>lipid peroxidation</em>—otherwise known as cellular rusting.</p>
+          </section>
 
-      <p class="lead">For decades, scientists have known that seed oils drive "inflammation." The discovery of Ferroptosis finally answers <em>exactly how</em>—and it's more catastrophic than anyone predicted.</p>
+          <section id="fragile-wires">
+            <div class="section-heading">
+              <div>
+                <span class="label">Cellular Architecture</span>
+                <h2>Stable Walls vs. Fragile Wires</h2>
+              </div>
+            </div>
+            <p>To understand ferroptosis, you must look at what a cell membrane is built from. A cell membrane isn't just a wrapper; it's an active fortress composed of fatty acids.</p>
+            <p><strong>Saturated fats</strong> (found in butter and tallow) consist of straight, rigid chemical structures where every carbon bond is fully "saturated" with hydrogen. They are incredibly stable and chemically inert. They do not react easily.</p>
+            <p><strong>Polyunsaturated fats (PUFAs)</strong> (found in massive quantities in seed oils like canola, soybean, and corn oil) are completely different. They contain multiple "double bonds" that are missing hydrogen atoms. Biologically, these double bonds act like exposed, uninsulated chemical wires. They are highly fragile and deeply prone to reacting with oxygen.</p>
+          </section>
 
-      <h2>The Discovery of Cellular Rust</h2>
-      <p>Until 2012, biologists generally believed cells died in one of two ways: <em>Apoptosis</em> (a quiet, beautifully programmed cellular suicide) or <em>Necrosis</em> (messy death by traumatic injury). That changed when Dr. Brent R. Stockwell and Dr. Scott Dixon at Columbia University discovered an entirely new, third pathway of cell death. They called it <strong>Ferroptosis</strong>.</p>
-      <p>The name comes from "ferro" (iron) and "ptosis" (falling or dying). Ferroptosis is an explosive, iron-dependent cellular death driven entirely by rampant <em>lipid peroxidation</em>—otherwise known as cellular rusting.</p>
+          <section id="the-spark">
+            <div class="section-heading">
+              <div>
+                <span class="label">The Mechanism</span>
+                <h2>The Spark that Lights the Fire</h2>
+              </div>
+            </div>
+            <p>Iron is ubiquitous in the human body. It transports oxygen and fuels cellular engines. When free iron gently bumps into a stable saturated fat membrane, nothing happens—it bounces off. But when iron strikes the exposed double-bonds of fragile PUFAs, it behaves like a spark hitting dry tinder.</p>
+            <p>It triggers a runaway chemical chain reaction. The fragile seed oils in the membrane rapidly oxidize into highly toxic <strong>OXLAMs</strong> (Oxidized Linoleic Acid Metabolites) and lipid peroxides.</p>
+            <p>The cell attempts to extinguish this biochemical fire using an antioxidant defense enzyme called GPX4 (Glutathione Peroxidase 4). But because the modern diet has hyper-saturated our cells with linoleic acid, the GPX4 fire-extinguishers are quickly overwhelmed. The result? The cell membrane literally rusts, shatters, and ruptures—violently spewing highly inflammatory, toxic debris into the surrounding circulatory system.</p>
+          </section>
 
-      <h2>Stable Walls vs. Fragile Wires</h2>
-      <p>To understand ferroptosis, you must look at what a cell membrane is built from. A cell membrane isn't just a wrapper; it's an active fortress composed of fatty acids.</p>
-      <p><strong>Saturated fats</strong> (found in butter and tallow) consist of straight, rigid chemical structures where every carbon bond is fully "saturated" with hydrogen. They are incredibly stable and chemically inert. They do not react easily.</p>
-      <p><strong>Polyunsaturated fats (PUFAs)</strong> (found in massive quantities in seed oils like canola, soybean, and corn oil) are completely different. They contain multiple "double bonds" that are missing hydrogen atoms. Biologically, these double bonds act like exposed, uninsulated chemical wires. They are highly fragile and deeply prone to reacting with oxygen.</p>
+          <section id="smoking-gun">
+            <div class="section-heading">
+              <div>
+                <span class="label">The Aftermath</span>
+                <h2>The Ultimate Smoking Gun</h2>
+              </div>
+            </div>
+            <p>Modern research (2021-2026) has now linked the explosion of ferroptotic tissue damage directly to heart failure, Alzheimer's (where neurons "rust" to death), and catastrophic organ stress.</p>
+            <p>Ferroptosis proves that when we ingest high volumes of industrial seed oils, we aren't just eating "empty calories." We are literally building our cell membranes out of highly unstable biological gasoline—just waiting for a single iron spark to ignite.</p>
+          </section>
 
-      <h2>The Spark that Lights the Fire</h2>
-      <p>Iron is ubiquitous in the human body. It transports oxygen and fuels cellular engines. When free iron gently bumps into a stable saturated fat membrane, nothing happens—it bounces off. But when iron strikes the exposed double-bonds of fragile PUFAs, it behaves like a spark hitting dry tinder.</p>
-      <p>It triggers a runaway chemical chain reaction. The fragile seed oils in the membrane rapidly oxidize into highly toxic <strong>OXLAMs</strong> (Oxidized Linoleic Acid Metabolites) and lipid peroxides. The cell attempts to extinguish this biochemical fire using an antioxidant defense enzyme called GPX4 (Glutathione Peroxidase 4). But because the modern diet has hyper-saturated our cells with linoleic acid, the GPX4 fire-extinguishers are quickly overwhelmed.</p>
-      <p>The result? The cell membrane literally rusts, shatters, and ruptures—violently spewing highly inflammatory, toxic debris into the surrounding circulatory system. This is Ferroptosis.</p>
+          <section id="sources" class="sources-section" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+            <h2>Sources Cited</h2>
+            <ul class="citation-list" style="list-style: none; padding: 0; margin-top: 1rem;">
+              <li style="margin-bottom: 1rem;"><strong>Stockwell, B. R., et al. (2012).</strong> <em>"Ferroptosis: An Iron-Dependent Form of Nonapoptotic Cell Death."</em> Cell.</li>
+              <li style="margin-bottom: 1rem;"><strong>Wang Y., et al. (2026).</strong> <em>"Acteoside alleviates sepsis-induced acute lung injury by activating the Nrf2 pathway to inhibit ferroptosis."</em> Tissue and Cell.</li>
+              <li style="margin-bottom: 1rem;"><strong>Duggan E., et al. (2026).</strong> <em>"Phospholipid Glutathione Peroxidase Overexpression Mitigates... Inflammation."</em> Journal of Cachexia, Sarcopenia and Muscle.</li>
+            </ul>
+          </section>
+        </div>
 
-      <h2>The Ultimate Smoking Gun</h2>
-      <p>Modern research (2021-2026) has now linked the explosion of ferroptotic tissue damage directly to heart failure, Alzheimer's (where neurons "rust" to death), and catastrophic organ stress. Ferroptosis proves that when we ingest high volumes of industrial seed oils, we aren't just eating "empty calories." We are literally building our cell membranes out of highly unstable biological gasoline—just waiting for a single iron spark to ignite.</p>
-
-      <section id="sources" class="sources-section" style="margin-top: 4rem;">
-        <h2>Sources Cited</h2>
-        <ul class="citation-list">
-          <li><strong>Stockwell, B. R., et al. (2012).</strong> <em>"Ferroptosis: An Iron-Dependent Form of Nonapoptotic Cell Death."</em> Cell.</li>
-          <li><strong>Wang Y., et al. (2026).</strong> <em>"Acteoside alleviates sepsis-induced acute lung injury by activating the Nrf2 pathway to inhibit ferroptosis."</em> Tissue and Cell.</li>
-          <li><strong>Duggan E., et al. (2026).</strong> <em>"Phospholipid Glutathione Peroxidase Overexpression Mitigates... Inflammation."</em> Journal of Cachexia, Sarcopenia and Muscle.</li>
-        </ul>
-      </section>
-    </article>
+        <aside class="topic-sidebar">
+          <div class="sidebar-block">
+            <a href="topic-seed-oils.html" class="card" style="display: block; text-decoration: none; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 2rem;">
+              <span style="font-size: 1.5rem;">←</span>
+              <h4 style="margin: 0.5rem 0 0 0;">Back to Hub</h4>
+              <p style="font-size: 0.8rem; color: #64748b; margin: 0;">Return to Seed Oils Overview</p>
+            </a>
+            <h4>Contents</h4>
+            <ul class="toc-list" style="list-style: none; padding: 0;">
+              <li><a href="#discovery" style="text-decoration: none; color: #0f172a;">The Discovery</a></li>
+              <li style="margin-top:0.5rem;"><a href="#fragile-wires" style="text-decoration: none; color: #0f172a;">Stable vs Fragile Fats</a></li>
+              <li style="margin-top:0.5rem;"><a href="#the-spark" style="text-decoration: none; color: #0f172a;">The Iron Spark</a></li>
+              <li style="margin-top:0.5rem;"><a href="#smoking-gun" style="text-decoration: none; color: #0f172a;">The Smoking Gun</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" style="margin-top: 60px; border-top: 1px solid #D9DFE3; padding: 40px 0; text-align: center; color: #7A868F;">
+    <div class="container">
+      <p>© Metabolic Library. Built carefully, topic by topic.</p>
+    </div>
+  </footer>
 </body>
 </html>
